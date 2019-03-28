@@ -1,0 +1,43 @@
+{
+  "name": "react_movie_app",
+  "version": "0.1.0",
+  "proxy": "http://localhost:5000",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.5",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
+    "password-hash": "^1.2.2",
+    "react": "^16.8.4",
+    "react-async-script-loader": "^0.3.0",
+    "react-coverflow": "^0.2.19",
+    "react-dom": "^16.8.4",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.0.2",
+    "react-paypal-express-checkout": "^1.0.5",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "reactstrap": "^7.1.0",
+    "redux": "^4.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

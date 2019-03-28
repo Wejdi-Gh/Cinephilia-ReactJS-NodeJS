@@ -1,0 +1,1047 @@
+body , html ,  .filmlist,.col-md-11,.col-md-1 , .loading-container,.App {
+background: black!important;
+background-attachment: fixed;
+
+}
+
+body , html  {
+  background: black!important;
+  background-attachment: fixed;
+  
+  }
+
+/* Navbar */
+.navbar.navbar-light.bg-light{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position : fixed;
+  top: 0;
+  width: 95%;
+  z-index: 144444; 
+  background-image: url(bg-title-shop.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: black!important;
+  
+}
+.form-inline {
+margin-left : 100px;
+
+}
+
+.navbar-light h1 {
+    color : #a7222b;
+   font-family: 'Germania One', cursive ; 
+   font-size: 60px;
+   margin-left: 10px;
+   font-weight: bold;
+  }
+
+  .title {
+display: flex;
+justify-content: space-between;
+align-items: center
+  }
+
+.navbar-light form{
+ margin-right: 50px;
+}
+
+.navbar-light .heart {
+  width : 200px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(216, 173, 173);
+
+}
+
+.card-body .heart {
+  width : 200px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(216, 173, 173);
+  
+  padding-bottom: 22px;
+  text-align: center;
+}
+
+.navbar-light .heart i:hover {
+color : rgb(228, 228, 25);
+cursor: pointer;
+}
+
+.filmlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-top:90px;
+  
+   }
+   .fa-times {
+    color : white;
+    cursor: pointer;
+    margin-left:10px;
+   }
+   .fa-times:hover  {
+    color : #a7222b;
+    }
+  
+    .starfilter {
+     display:flex;
+    
+    }
+  
+    .logouticon{
+    display:flex;
+    flex-direction: column;
+    color :white;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    width:100%;
+    font-size: 15px;
+    }
+  
+    .logouticon:hover{
+      color :#a7222b;
+      }
+
+      .settingbutton a{
+        display:flex;
+        flex-direction: column;
+        color :white;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 100px;
+        width:100%;
+        font-size: 15px;
+      }
+
+      .settingbutton:hover{
+        color :#a7222b;
+        }
+
+/* Navbar */
+/* card */
+.isyellow {
+
+  color : rgb(228, 228, 25);
+}
+
+.card {
+ width: 300px;
+margin-top: 25px;
+margin-bottom: 10px;
+cursor: pointer;
+box-shadow : 0 0 5px 0px #d6d0d0;
+}
+.card img {
+  height: 55%;
+
+ }
+
+ .card-title {
+   color:black;
+ }
+
+ .card-body{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 180px ;
+ }
+ .card-body a {
+  width: 150px;
+  font-weight: bold;
+  
+ }
+ div.card-body a:hover {
+ color : red ;
+  
+ }
+
+ .card-body p {
+ height: 100%;
+  overflow-y: hidden;
+ }
+ .card-body p:hover {
+  
+   overflow-y: auto;
+  }
+ 
+ .card-body .heart {
+  
+   margin-bottom :10px;
+  
+  }
+  
+ /* card */
+
+
+
+.glow {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+  
+
+  
+  .sidebar a:hover {
+    text-decoration: none;
+    color :#a7222b;
+  }
+
+  .sidebar a {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-family:  'Roboto', sans-serif;
+ 
+  }
+
+  .sidebar {
+    height: 100vh;
+    width:100vw;
+    z-index: 9000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: black!important;
+  }
+
+  .routelinks {
+   position: fixed;
+
+  }
+  
+  .next{
+    background-color: black;
+    color:#a7222b;
+    border : 0px transparent;
+    box-align: middle;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .next:hover ,.fa-angle-double-right:hover {
+
+     color : #b15057;
+  }
+  
+  .fa-angle-double-right , .fa-angle-double-left {
+    cursor: pointer;
+    color:#a7222b;
+  }
+
+  .loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 10px;
+  }
+
+  .prevnext{
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  }
+
+  .filmcontainer {
+    padding-left: 0px;
+  }
+
+  img {
+ width: 250px;
+ height: 270px;
+ border-radius: 10px;
+ box-shadow: #d6d0d0;
+ 
+  }
+
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  
+    50% {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+  
+    100% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  
+    50% {
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+  
+    100% {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  
+  .navbar-light .faa-pulse.animated,
+  .navbar-light .faa-pulse.animated-hover:hover,
+  .navbar-light .faa-parent.animated-hover:hover > .faa-pulse {
+    -webkit-animation: pulse 2s linear infinite;
+    animation: pulse 2s linear infinite;
+  }
+  
+/* article */
+
+.main h2 {
+  color:#a7222b;
+
+}
+.main{
+  margin :20px;
+  border: white;
+  box-shadow: 0 0 3px 3px #d6d0d0;
+  padding: 10px;
+}
+.article {
+  display : flex ;
+  justify-content: center;
+ 
+}
+.articleimage {
+border-radius: 30px;
+margin :10px;
+width : 40%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.articleimage img {
+  width : 100%;
+  border: transparent outset;
+  }
+
+.articletext {
+  width : 60%;
+  margin :10px;
+  text-align: justify;
+  color : white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.articletext a {
+ color: rgb(61, 61, 240) !important;
+ cursor: pointer;
+}
+
+/* article */
+
+/* News */
+.newslink{
+text-align: center;
+margin: 20px;
+}
+
+.newslink span {
+  margin :50px;
+cursor: pointer;
+ 
+  }
+
+  .navnews h1 {
+    color : #a7222b;
+   font-family:  'Germania One', cursive;
+   font-size: 60px;
+ margin-left: 10px;
+
+  }
+
+  .navnews  {
+    width:100%;
+    padding-top: 20px;
+    position:fixed;
+    background-color: black;
+    z-index: 1444;
+   display :flex;
+   justify-content: space-around;
+   align-items: center;
+   top: 0;
+  
+  }
+  .filmnewscontainer{
+    margin-top:120px;
+
+  }
+
+  .filmnewscontainer h1 {
+    margin-bottom:0px;
+    margin-left:30px;
+  color :rgb(122, 122, 126);
+  }
+
+  .newslink a {
+ color :white;
+ font-size: 25px;
+ text-decoration: none;
+ font-weight: bold;
+  }
+  .newslink a:hover {
+    color :#a7222b;
+  
+     }
+
+ /* News */
+
+    /* home carousel */
+  .carousel{
+   cursor: pointer;
+    margin-top : 110px;
+  }
+
+  .carousel img {
+
+    height: 500px;
+  }
+
+  .carousel h3 {
+font-size: 75px ;
+font-weight: bold;
+font-family:'Roboto', sans-serif;
+  }
+  /* home carousel*/
+
+  /* footer */
+
+.footer {
+  background-image: url(./image/footerimg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 300px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer li {
+ color : white;
+ list-style: none;
+ cursor: pointer;
+}
+
+.footer li:hover {
+  color : #a7222b;
+ }
+
+.footer h5 {
+  color : #a7222b;
+  font-weight: bold;
+ }
+  /* footer */
+/* home body */
+  
+.homebody h1{
+  color : #a7222b;
+  text-align: center;
+  font-family:  'Roboto', sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.homebody p {
+  color: white;
+  font-size: 22px;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.homebody {
+  padding:  40px 10px 20px 10px ;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.homebody span {
+  color:rgb(228, 22, 22);
+  font-weight: bold;
+}
+
+
+  /* home body */
+
+
+  .login,.payment ,.paymentplan ,.homepage {
+    margin-top: 90px;
+    }
+  
+     body,html {
+      background: black!important;
+      background-attachment: fixed;
+  
+    }
+  
+  /*Main Navbar*/
+  .glow {
+    font-size: 60px;
+    font-family: 'Germania One', cursive; 
+    color : #a7222b;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    margin-left: 60px;
+    cursor: pointer;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  
+  .menunavbar  {
+    background-color: black ;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+  
+  .menunavbar a {
+    color: white;
+    font-family:  'Roboto', sans-serif;
+    font-size: 28px;
+   text-decoration: none;
+   font-weight: bold;
+  
+  }
+  
+  .menunavbar ul {
+  display: flex;
+  justify-content: space-around;
+  width:500px;
+  align-items: center;
+  text-align: center;
+  }
+  
+  .menunavbar a:hover {
+    color : #a7222b;
+   text-decoration: none;
+  }
+  
+   button.navbar-toggler{
+    border-color: white;
+  }
+  /*Main Navbar*/
+  
+  
+  
+  /*sign up*/
+  
+  
+  .signup form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    width :500px;
+    border: 1px solid white;
+    padding: 12px;
+  }
+  
+  form label {
+   text-align: left;
+   width :500px;
+   color: white;
+  }
+  .form-control {
+    width :500px;
+  }
+  
+  .btn-primary , .btn-danger{
+  width : 250px;
+  
+  }
+  
+  .signup{
+  flex-wrap: wrap;
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .singupformbutton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+  div.form-group{
+  
+    margin-bottom: 0;
+  }
+   
+   .signup h5 {
+    padding: 10px;
+    color:#a7222b;
+    font-weight: bold;
+    }
+  
+  /*sign up*/
+
+   /* Setting */
+ 
+ .setting form {
+    border-radius: 30px;
+    padding: 12px;
+    display :flex;
+    justify-content: space-around;
+    align-items: center;
+    width : 100%;
+  }
+
+  .setting h5 {
+    color: #a7222b;
+    margin-top: 20px;
+    font-weight: bold;
+    }
+
+    .passwordsetting {
+      border-radius: 30px;
+      border: 1px solid white;
+      padding: 15px;
+      height: 360px;
+       width : 530px;
+       display:flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .password {
+       display:flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+    }
+
+    .setting {
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        width: 100%;
+     
+        padding : 10px;
+      }
+     
+
+    /*Setting */
+  
+  /*sign up Media */
+  .vl {
+    border:1px solid white;
+    height: 680px;
+  }
+  
+
+   .signupsocial span{
+    font-size: 25px;
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    }
+
+    .signupsocial button{
+      font-size: 20px;
+      display:flex ;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 20px;
+      font-family: 'Roboto', sans-serif; 
+      font-weight: bold;
+      text-decoration: none;
+      height: 75px;
+      width : 350px;
+    
+      }
+  
+
+  .signupsocial{
+  margin-top :200px;
+  align-self: flex-start;
+  text-align: center;
+  display :flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  }
+  
+  
+  /*sign up Social Media*/
+  
+  /*Login*/
+  .login .form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    width :500px;
+    border: solid rgba(0,0,0,.75);
+    padding :50px;
+    border: 1px solid white;
+    margin-top: 100px;
+    margin-bottom: 30px;
+   
+  }
+  
+  .login .form label {
+   text-align: left;
+   width :500px;
+   color: white;
+   margin-top:20px;
+   font-weight: bold;
+  }
+  .login .form-control {
+    width :400px;
+  }
+  
+  .login .btn-primary {
+  width : 150px;
+  margin-top: 20px;
+  }
+  
+  .login {
+    display : flex;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px!important;
+    flex-direction: column;
+  }
+
+  .loginsocial {
+  text-align: center;
+  display :flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+  
+  /*Login*/
+  
+  /*Payement*/
+  .payment form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    width :500px;
+    margin-top:3px;
+    border: solid rgba(0,0,0,.75);
+    padding :20px;
+    border: 1px solid white;
+  
+  }
+  
+  .payment form label {
+   text-align: left;
+   width :500px;
+   color: white;
+   margin-top: 10px;
+  }
+  .payment.form-control {
+    width :400px;
+  }
+  
+  .payment .btn-danger {
+  width : 150px;
+  margin-top: 20px;
+  
+  }
+  
+  .payment{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+    font-family:  'Roboto', sans-serif;
+  }
+  .condtionterms{
+   margin-top: 20px;
+   width: 500px;
+   font-family:  'Roboto', sans-serif;
+   font-size: 15px;
+   padding: 10px;
+   text-align: center;
+  }
+  
+  
+  .condtionterms button.btn.btn-danger{
+  border : black;
+  background-color: black;
+  color: blue!important;
+  font-family:  'Roboto', sans-serif;
+  font-size: 15px;
+  margin-left:10px;
+  margin-top:0;
+  
+  
+  }
+  
+  .payment h5 {
+    margin-bottom: 20px;
+      color:#a7222b;
+      font-weight: bold;
+  
+    }
+    
+  .chekterms {
+    text-align: center;
+    width: 500px;
+  }
+  
+  .condtionterms button.btn.btn-danger:focus {
+    color: black;
+  }
+
+
+  .paymentchoice{
+    display : flex ;
+    justify-content: space-around;
+    align-items: center;
+    width:100vw;
+}
+
+.paypal{
+
+  align-self: flex-start;
+ margin-top: 200px;
+  
+
+
+}
+  /*Payement*/
+  
+  /*Payement Plan*/
+  .paymentplan{
+    display :flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-direction: column;
+    margin-top:90px;
+  }
+  
+  .paymentplan h5 {
+  margin-bottom: 0;
+  color:#a7222b;
+  font-weight: bold;
+  }
+  
+  .plancheck {
+  width:90vw;
+  margin:15px;
+  display :flex;
+  justify-content: space-around;
+  align-items: center; 
+  }
+  
+  label.form-check-label{
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .advantage span  {
+    color: #a7222b;
+    font-weight: bold;
+    margin-left: 25px;
+   }
+  
+  .plan-container-wrapper {
+    position: relative;
+    padding-bottom: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    color: #a7222b;;
+    font-size: 14px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 44px -5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .enter-price, .price-enter-disclaimer {
+    padding: 20px 0 0;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  
+  .new-plan-price {
+    font-size: 32px;
+  }
+  span.strike-outer {
+    color: #a7222b;
+    text-decoration: line-through;
+  }
+  
+  span.strike-inner {
+    color: #4c5964;
+  }
+  
+  .gold-ribbon {
+    font-size: 12px;
+    right: -30px;
+    top: 80px;
+  }
+  
+  .gold-ribbon {
+    background-color: #c6a54c;
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 12px 5px;
+    color: #fff;
+    max-width: 130px;
+    border-radius: 6px;
+    margin: 0 auto 20px;
+    box-shadow: 0px 0px 1px 0px #000;
+    right: -43px;
+    top: 59px;
+  }
+  .plancheck ul  {
+    list-style: disc;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding-right: 20px;
+  }
+  
+  .plancheck li {
+    color: #4c5964;
+    padding:5px;
+    font-weight: bold;
+  }
+  
+  .plan-get-started {
+    text-transform: uppercase;
+    border-radius: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 28px 10px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    background-color:#a7222b;
+   width: 300px;
+   text-align: center;
+  }
+  
+  /*Payement Plan*/
+  
+  /*initial home page */
+  
+  .homepage {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+  height: 540px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+  border: 0 solid white;
+  background:url("http://cdn.amctheatres.com/general/img/dp_1004_amclp_amcdifference_promo.jpg");
+  z-index: 144;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  
+  
+  .homepage h1 {
+    font-size: 50px;
+    font-family:  'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color : #a7222b;
+    font-weight: 700;
+   }
+  
+   .homepage h3 {
+    font-size: 30px;
+    font-family:  'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color : white;
+    text-align: center;
+   }
+  
+   .homepage h4{
+    font-size: 35px;
+    font-family:  'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color : white;
+    font-weight: bold;
+    
+   }
+  
+  .allaccess h1{
+    font-size: 50px;
+    font-family:  'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color : #a7222b;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .allaccess img {
+    width: 100%;
+  height: 100%;
+  }
+  
+
+  
+  
+  /*initial home page */
