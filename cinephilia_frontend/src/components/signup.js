@@ -132,18 +132,18 @@ validfirstname=(e)=> {
                 let fbfirstname = response.name.split(" ")[0]
                 let fblastname = response.name.split(" ")[1]
                 let newmember ={firstname:fbfirstname,lastname:fblastname,email:response.email.toLowerCase() }
-  
+                let memberemail ={email:response.email.toLowerCase()}
                 const chekedmember=this.state.membersdata.filter(el=>el.email === response.email.toLowerCase())
                 
                 if (chekedmember.length){
                   this.setState({checkedfbemailexist:true ,mustfblogin:false})                
                     }
                   else this.setState({checkedfbemailexist:false})
-            
-                
-                localStorage.setItem("signupdata", JSON.stringify(newmember));
+
   
                 if (this.state.fbloggedin && !this.state.checkedfbemailexist) {  
+                  localStorage.setItem("signupdata", JSON.stringify(newmember));
+                  localStorage.setItem("memberemail", JSON.stringify(memberemail));
                 let path = `/Paymentplan`;
                  this.props.history.push(path)}
 

@@ -36,6 +36,8 @@ class Setting extends Component {
                 }
          }
     
+        
+
   componentDidMount() {
     let emailmember = localStorage.getItem("memberemail");
     emailmember = JSON.parse(emailmember)
@@ -116,7 +118,7 @@ validfirstname=(e)=> {
          .then((res)=>alert('Your Account Has been Updated'))
          .catch(err=> console.log(err))
          window.location.reload(true)
-
+         
               }}
 
     else {
@@ -125,13 +127,17 @@ validfirstname=(e)=> {
    
             let updatedmember = {firstname:this.state.firstname,lastname:this.state.lastname,email:this.state.member.email,password:this.state.password} 
             axios.put (`/modifymember/${this.state.member.email}`, updatedmember )
-                 .then((res)=>alert('Your Account Has been Updated'))
+                 .then((res)=>{
+                   alert('Your Account Has been Updated')
+                   
+                  })
                  .catch(err=> console.log(err))
                  window.location.reload(true)
                       }
     }          
 
 }
+
 
 removecontact=(e) => {
     e.preventDefault()

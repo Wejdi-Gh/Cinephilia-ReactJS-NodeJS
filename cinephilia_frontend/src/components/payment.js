@@ -160,15 +160,14 @@ validfirstname=(e)=> {
 
           paypalonSuccess = (payment) =>{
                if (payment.paid){
-                alert("Payment Accepted And Wlecome To CinePhilia"+" "+ ` ${this.state.newmember.firstname}`+ " "+ `${this.state.newmember.lastname}`)
+                alert("Payment Accepted And Welcome To CinePhilia"+" "+ ` ${this.state.newmember.firstname}`+ " "+ `${this.state.newmember.lastname}`)
                 axios.post('/addMember', this.state.newmember )
                 .then((res)=>alert("Payment Accepted"))
                 .catch(err => alert("cant send data")) 
                 this.props.Loginacess()
                 let path = `/platform`;
-                window.location.reload(true)
                 this.props.history.push(path);
-               
+                window.location.reload(true)
 
                }
              console.log('Successful payment!', payment);
@@ -245,7 +244,7 @@ validfirstname=(e)=> {
       <div className="condtionterms">
 
 <div className="chekterms">
-<Label check> <Input type="checkbox" onChange={()=>this.setState({agree:true})} />{' '} I Agree </Label>
+<Label check> <Input type="checkbox" onChange={()=>this.setState({agree:!this.state.agree})} />{' '} I Agree </Label>
 
 <Button color="danger" onClick={this.toggle}>Terms of Use</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>

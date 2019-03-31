@@ -97,9 +97,8 @@ chekpasswordccess=(e)=>{
     localStorage.setItem("memberemail", JSON.stringify(memberemail));
     this.props.Loginacess()
       let path = `/platform`
-      window.location.reload(true)
       this.props.history.push(path) 
-     
+      window.location.reload(true)
   }
   } 
 } 

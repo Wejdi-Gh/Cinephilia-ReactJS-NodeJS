@@ -83,7 +83,7 @@ return (<nav className="navbar navbar-light bg-light">
 </form>
 <FormGroup style={{marginBottom:"28px",textAlign:"center"}}>
           <Label style={{marginBottom:"5px",color:"white"}} for="exampleSelect">Filter By Genre</Label>
-          <Input style={{cursor:"pointer"}} type="select" name="select" id="exampleSelect" onChange={this.selecthandle} >
+          <Input  style={{cursor:"pointer"}} type="select" name="select" id="exampleSelect" onChange={this.selecthandle} >
           <option> </option>
             <option>Action</option>
             <option>Romance</option>

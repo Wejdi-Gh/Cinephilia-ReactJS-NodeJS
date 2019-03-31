@@ -6,7 +6,6 @@ const nodemailer = require("nodemailer");
 const {MongoClient,ObjectID} = require('mongodb')
 const assert = require('assert')
 
-
 app.use(bodyParser.json())
 
 const MongoUrl = 'mongodb://localhost:27017'
